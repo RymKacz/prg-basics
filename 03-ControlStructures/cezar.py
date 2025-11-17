@@ -9,6 +9,5 @@ for char in plain_text:
     # add encrypted character to encrypted text
     encrypted_text += chr(ord(char) + 1)
     
-
 print(plain_text)
 print(encrypted_text)
