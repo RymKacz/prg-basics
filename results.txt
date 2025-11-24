@@ -1,0 +1,69 @@
+test_p1 (__main__.Test.test_p1) ... FAIL
+test_p10 (__main__.Test.test_p10) ... ERROR
+test_p2 (__main__.Test.test_p2) ... FAIL
+test_p3 (__main__.Test.test_p3) ... ERROR
+test_p4 (__main__.Test.test_p4) ... ok
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... ok
+test_p7 (__main__.Test.test_p7) ... ERROR
+test_p8 (__main__.Test.test_p8) ... ok
+test_p9 (__main__.Test.test_p9) ... ERROR
+
+======================================================================
+ERROR: test_p10 (__main__.Test.test_p10)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 69, in test_p10
+    self.assertEqual(p10.f("hello world"),True)
+                     ^^^^^
+AttributeError: module 'p10' has no attribute 'f'
+
+======================================================================
+ERROR: test_p3 (__main__.Test.test_p3)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 29, in test_p3
+    self.assertEqual(p3.f("For Your Information"),"FYI")
+                     ^^^^
+AttributeError: module 'p3' has no attribute 'f'
+
+======================================================================
+ERROR: test_p7 (__main__.Test.test_p7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 51, in test_p7
+    self.assertEqual(p7.f(5),3)
+                     ^^^^
+AttributeError: module 'p7' has no attribute 'f'
+
+======================================================================
+ERROR: test_p9 (__main__.Test.test_p9)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 63, in test_p9
+    self.assertEqual(p9.f("water"),2)
+                     ^^^^
+AttributeError: module 'p9' has no attribute 'f'
+
+======================================================================
+FAIL: test_p1 (__main__.Test.test_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 17, in test_p1
+    self.assertEqual(p1.f(0),0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_p2 (__main__.Test.test_p2)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/05-MockTest/grade-programs.py", line 23, in test_p2
+    self.assertEqual(p2.f(5,5,7),False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.002s
+
+FAILED (failures=2, errors=4)
