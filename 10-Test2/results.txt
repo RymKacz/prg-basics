@@ -1,0 +1,77 @@
+test_p1 (__main__.Test.test_p1) ... ERROR
+test_p10 (__main__.Test.test_p10) ... FAIL
+test_p2 (__main__.Test.test_p2) ... ok
+test_p3 (__main__.Test.test_p3) ... ok
+test_p4 (__main__.Test.test_p4) ... ERROR
+test_p5 (__main__.Test.test_p5) ... ok
+test_p6 (__main__.Test.test_p6) ... FAIL
+test_p7 (__main__.Test.test_p7) ... ERROR
+test_p8 (__main__.Test.test_p8) ... ERROR
+test_p9 (__main__.Test.test_p9) ... ERROR
+
+======================================================================
+ERROR: test_p1 (__main__.Test.test_p1)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 13, in test_p1
+    import p1
+ModuleNotFoundError: No module named 'p1'
+
+======================================================================
+ERROR: test_p4 (__main__.Test.test_p4)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 30, in test_p4
+    self.assertEqual(p4.f(sub_grades),"econ")
+                     ~~~~^^^^^^^^^^^^
+  File "/Users/marcin/Documents/prg-basics/10-Test2/p4.py", line 2, in f
+    math_avg = sum(subjecs['math'])/len(subjecs['math'])
+                   ~~~~~~~^^^^^^^^
+KeyError: 'math'
+
+======================================================================
+ERROR: test_p7 (__main__.Test.test_p7)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 47, in test_p7
+    import p7
+ModuleNotFoundError: No module named 'p7'
+
+======================================================================
+ERROR: test_p8 (__main__.Test.test_p8)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 54, in test_p8
+    import p8
+ModuleNotFoundError: No module named 'p8'
+
+======================================================================
+ERROR: test_p9 (__main__.Test.test_p9)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 58, in test_p9
+    import p9
+ModuleNotFoundError: No module named 'p9'
+
+======================================================================
+FAIL: test_p10 (__main__.Test.test_p10)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 68, in test_p10
+    self.assertEqual(p10.f(quiz_answers,student1,student2),3)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 4 != 3
+
+======================================================================
+FAIL: test_p6 (__main__.Test.test_p6)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/marcin/Documents/prg-basics/10-Test2/./check-test2-ZIISS1-1113.py", line 43, in test_p6
+    self.assertEqual(p6.f("G12345"),False)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True != False
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.003s
+
+FAILED (failures=2, errors=5)
